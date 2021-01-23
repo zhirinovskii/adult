@@ -68,7 +68,7 @@ html {
 
 video {
     margin: auto;
-   height: 100vh;
+    min-height: 100vh;
     display: block;
 }
 
@@ -258,4 +258,15 @@ header {
 .jnsqxD .action-ctn:hover .action-tooltip {
     top: -1em;
     opacity: 1;
+}
+
+@media (max-width: 1070px) {
+    .movie-wrap {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    video {
+        margin-left: calc(100vw - 1085px);
+    }
 }
