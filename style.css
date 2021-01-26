@@ -71,16 +71,79 @@ video {
     margin: auto;
     min-height: 100vh;
     display: block;
+    width: 100vw;
 }
+
+.c0145 {
+    width: 376px;
+}
+
+.c0143 {
+    top: auto;
+    right: 0;
+    color: #ffffff;
+    height: auto;
+    bottom: 0;
+    padding: 0 24px;
+    display: flex;
+    z-index: 1400;
+    position: fixed;
+    font-size: 11px;
+    box-sizing: border-box;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    line-height: normal;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+h3.c0144 {
+    margin: 8px 0;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h3.c0144 > sub {
+    bottom: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.c0143 > button {
+    min-width: 112px;
+}
+
+.c011 button {
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.c0143 > span {
+    margin: 8px 0;
+    font-size: 11px;
+}
+
+button.c0146 {
+    background: linear-gradient(to bottom, #18d4e8 0%, hsl(191, 87%, 29%) 100%);
+    height: 32px;
+}
+
+
 
 .bcLZqm {
     position: relative;
     z-index: -1;
 }
 
+#__next {
+    overflow-x: hidden;
+}
+
 header {
     position: fixed;
-    width: 100%;
+    width: 99%;
     padding: 10px;
 }
 
@@ -88,6 +151,12 @@ header {
     width: fit-content;
     margin: auto;
     position: relative;
+}
+
+.c0155 {
+    min-width: 88px;
+    background: linear-gradient(to bottom, hsl(186, 82%, 55%) 0%, hsl(191, 87%, 34%) 100%);
+    color: #ffffff;
 }
 
 .movie-wrap::before {
@@ -343,6 +412,7 @@ form {
     border: 0px;
     padding: 0px;
 }
+
 .c01111 {
     width: 100%;
     display: inline-flex;
@@ -375,6 +445,7 @@ form {
 .c01126 {
     height: 40px;
 }
+
 .c01112 {
     color: #212121;
     width: 100%;
@@ -457,14 +528,61 @@ form {
 }
 
 
-
 @media (max-width: 1070px) {
     .movie-wrap {
         overflow-x: hidden;
         width: 100%;
     }
+}
+
+
+@media (max-width: 500px) {
+    header img {
+        width: 40%;
+    }
+
+    #voice {
+        width: 25px;
+        height: 25px;
+    }
+
+    #disclamer {
+        width: 100%;
+    }
+
+    .jnsqxD {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        top: auto;
+    }
+
+    .jnsqxD .actions-panel {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .actions-list {
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    .jnsqxD .actions-list {
+        flex-wrap: nowrap;
+    }
+
+    .action-tooltip {
+        display: none;
+    }
+
+    .action-ctn {
+        margin-right: 20px;
+    }
 
     video {
-        margin-left: calc(100vw - 1085px);
+        height: 100vh;
+        min-width: 100vw;
+        width: auto;
+        transform: translateX(calc(100vw - 1000px));
     }
 }

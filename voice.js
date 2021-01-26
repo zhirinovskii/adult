@@ -15,3 +15,10 @@ function toggleMute() {
 voice.addEventListener('click',function(){
 toggleMute();
 })
+
+let button = document.querySelector('#button');
+let disclamer = document.querySelector('#disclamer');
+
+button.addEventListener('click', function () {
+    disclamer.style = 'display: none;';
+})
