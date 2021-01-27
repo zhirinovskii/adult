@@ -585,4 +585,8 @@ form {
         width: auto;
         transform: translateX(calc(100vw - 1000px));
     }
+
+    .sc-GMQeP.eKJGiC {
+        display: none;
+    }
 }
