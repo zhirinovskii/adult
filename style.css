@@ -580,10 +580,10 @@ form {
     }
 
     video {
-        height: 100vh;
-        min-width: 100vw;
+        height: 635px;
         width: auto;
-        transform: translateX(calc(100vw - 1000px));
+        transform: translateX(calc(90vw - 900px));
+        min-height: auto;
     }
 
     .sc-GMQeP.eKJGiC {
